@@ -1,0 +1,235 @@
+{
+  "about": {
+    "assistant_name": "EI Health Equity Assistant (Demo)",
+    "region_focus": "Southeast Asia",
+    "frameworks": [
+      "SDHE (Social Determinants of Health Equity)",
+      "BROM (Beneficiary-Reported Outcome Measures)"
+    ],
+    "disclaimer": "This is a demo. For real projects, validate content with local stakeholders and ethics/IRB guidelines."
+  },
+  "sdhe_domains": [
+    {
+      "domain": "Income & Employment",
+      "examples": [
+        "Job security",
+        "Informal labor conditions",
+        "Household income stability"
+      ]
+    },
+    {
+      "domain": "Education & Skills",
+      "examples": [
+        "Literacy",
+        "Health literacy",
+        "Vocational training access"
+      ]
+    },
+    {
+      "domain": "Housing & Built Environment",
+      "examples": [
+        "Overcrowding",
+        "Structural safety",
+        "Access to utilities",
+        "Universal design"
+      ]
+    },
+    {
+      "domain": "Environment & Air Quality",
+      "examples": [
+        "AQHI exposure",
+        "Proximity to traffic/industry",
+        "Urban heat"
+      ]
+    },
+    {
+      "domain": "Access to Health & Care",
+      "examples": [
+        "Primary care proximity",
+        "Financial protection",
+        "Community genetics services"
+      ]
+    },
+    {
+      "domain": "Social Protection & Inclusion",
+      "examples": [
+        "ID/legal status",
+        "Cash transfers",
+        "Disability inclusion"
+      ]
+    },
+    {
+      "domain": "Mobility & Access",
+      "examples": [
+        "Walkability",
+        "Public transport costs",
+        "Commute time"
+      ]
+    }
+  ],
+  "vulnerable_groups": [
+    "Low-income families",
+    "Elderly",
+    "Children",
+    "People with disabilities",
+    "Migrant workers",
+    "Informal settlers",
+    "Genomic/special-care patients"
+  ],
+  "country_notes": {
+    "Thailand": [
+      "Leverage BMA district networks",
+      "ThaiHealth SDHE work",
+      "Community health volunteers"
+    ],
+    "Philippines": [
+      "Barangay-level engagement",
+      "HappyPlaces UHI work",
+      "Flooding & heat island context"
+    ],
+    "Myanmar": [
+      "Conflict-displacement contexts",
+      "Monastery/school shelters",
+      "WASH & primary care access"
+    ],
+    "Vietnam": [
+      "Industrial corridors and air quality",
+      "Motorbike dependence",
+      "Urban heat/flood"
+    ],
+    "Indonesia": [
+      "Bappenas alignment",
+      "Jakarta flooding & air quality",
+      "Informal transport networks"
+    ]
+  },
+  "indicator_snippets": [
+    {
+      "name": "AQHI daily exposure",
+      "domain": "Environment & Air Quality",
+      "metric": "Days/year AQHI ≥ specified threshold",
+      "source": "City AQ monitoring"
+    },
+    {
+      "name": "Household crowding",
+      "domain": "Housing & Built Environment",
+      "metric": "Avg persons/room; % HH > 3 persons/room",
+      "source": "Household survey"
+    },
+    {
+      "name": "Primary care access",
+      "domain": "Access to Health & Care",
+      "metric": "% HH within 1km or 20-min walk of primary care",
+      "source": "GIS + field survey"
+    },
+    {
+      "name": "Income volatility",
+      "domain": "Income & Employment",
+      "metric": "% HH with >25% month-to-month income fluctuation",
+      "source": "Household survey"
+    },
+    {
+      "name": "Mobility burden",
+      "domain": "Mobility & Access",
+      "metric": "Median commute time to essential services (min)",
+      "source": "Travel diary/survey"
+    },
+    {
+      "name": "Inclusive design upgrades",
+      "domain": "Housing & Built Environment",
+      "metric": "# homes upgraded with rails/ramps/UD modules",
+      "source": "Program admin data"
+    },
+    {
+      "name": "BROM well-being score",
+      "domain": "Social Protection & Inclusion",
+      "metric": "Change in self-reported stress/safety (0–10)",
+      "source": "BROM survey"
+    }
+  ],
+  "templates": {
+    "impact_statement": "Title: {project_title}\nLocation: {location}\nFocus group: {group}\nDomains: {domains}\n\nProblem:\n{problem}\n\nAction:\n{actions}\n\nEarly Outcomes (BROM & metrics):\n{outcomes}\n\nEquity Rationale:\n{equity_rationale}\n\nNext Steps:\n{next_steps}\n",
+    "one_pager": "# {project_title}\n**Location:** {location}  \n\n**Focus Group:** {group}  \n\n**Goal:** {goal}\n\n## Why it matters (Health Equity)\n{equity_case}\n\n## What we will do\n- {workstream_1}\n- {workstream_2}\n- {workstream_3}\n\n## Indicators (SDHE/BROM)\n{indicators}\n\n## Outcomes & Communication\n{comms_plan}\n"
+  },
+  "faq": {
+    "what is sdhe": "SDHE = Social Determinants of Health Equity. It organizes structural drivers like income, housing, environment, and access to care to design targeted, fair interventions.",
+    "what is brom": "BROM = Beneficiary-Reported Outcome Measures. Short, recurring surveys that track perceived change (e.g., stress, safety, access) in beneficiaries’ own words/scores.",
+    "which countries": "The demo targets Southeast Asia—Thailand, Philippines, Myanmar, Vietnam, Indonesia—adapting to city/district contexts.",
+    "privacy": "Use anonymized data and get consent. Align with local IRB/ethics and data protection rules (e.g., PDPA)."
+  },
+  "project_indicator_presets": {
+    "climate justice": [
+      {
+        "name": "AQHI exposure days in target neighborhoods",
+        "domain": "Environment & Air Quality",
+        "metric": "Days/year AQHI ≥ threshold; disaggregated by sex/age/income"
+      },
+      {
+        "name": "Heat risk exposure",
+        "domain": "Environment & Air Quality",
+        "metric": "# days > city heat threshold; households lacking cooling/adaptation"
+      },
+      {
+        "name": "Housing thermal safety upgrades",
+        "domain": "Housing & Built Environment",
+        "metric": "# homes with shading/ventilation/insulation/UD modules"
+      },
+      {
+        "name": "Mobility time burden to essentials",
+        "domain": "Mobility & Access",
+        "metric": "Median minutes to clinic/market/school; off-peak vs peak"
+      },
+      {
+        "name": "Primary care access",
+        "domain": "Access to Health & Care",
+        "metric": "% HH within 1km/20-min walk of primary care"
+      },
+      {
+        "name": "BROM well-being & safety",
+        "domain": "Social Protection & Inclusion",
+        "metric": "Self-reported stress/safety 0–10 (quarterly)"
+      }
+    ]
+  },
+  "comms_playbook": {
+    "outcome_showcase": {
+      "artifacts": [
+        "1-page impact brief (before/after metrics + BROM deltas)",
+        "Dashboard snapshot (AQHI/heat days; upgrades; access)",
+        "Beneficiary story (Most Significant Change) w/ consent",
+        "District-level policy note with 3 asks and cost–benefit",
+        "2-slide investor update (SROI headline)"
+      ],
+      "cadence": [
+        "Monthly: dashboard snapshot + 1-paragraph update",
+        "Quarterly: impact brief with BROM changes",
+        "Biannual: policy note + partner roundtable"
+      ],
+      "tips": [
+        "Always disaggregate (sex/age/income/district).",
+        "Pair a structural indicator (SDHE) with a BROM perception change.",
+        "Use clear denominators (per HH, per block, per school).",
+        "Consent & PDPA: anonymize and store separately."
+      ]
+    }
+  },
+  "impact_tools_by_group": {
+    "women low-income": {
+      "primary": [
+        "BROM short form (stress 0–10; safety 0–10; access 0–10)",
+        "Time-use diary (caregiving & travel burden)",
+        "Household income stability check (volatility >25%)"
+      ],
+      "supplementary": [
+        "Most Significant Change (story-based)",
+        "Photovoice (participant-led photos)",
+        "WHO-5 Well-Being (very short; track change)"
+      ],
+      "notes": [
+        "Schedule data collection at convenient times; provide childcare if possible.",
+        "Use female enumerators or trusted community workers where appropriate.",
+        "Combine perception (BROM) with exposure/access indicators to show pathway."
+      ]
+    }
+  }
+}
