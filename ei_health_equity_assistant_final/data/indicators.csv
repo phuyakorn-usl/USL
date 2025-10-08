@@ -1,8 +1,0 @@
-name,domain,metric,source
-AQHI daily exposure,Environment & Air Quality,Days/year AQHI ≥ specified threshold,City AQ monitoring
-Household crowding,Housing & Built Environment,Avg persons/room; % HH > 3 persons/room,Household survey
-Primary care access,Access to Health & Care,% HH within 1km or 20-min walk of primary care,GIS + field survey
-Income volatility,Income & Employment,% HH with >25% month-to-month income fluctuation,Household survey
-Mobility burden,Mobility & Access,Median commute time to essential services (min),Travel diary/survey
-Inclusive design upgrades,Housing & Built Environment,# homes upgraded with rails/ramps/UD modules,Program admin data
-BROM well-being score,Social Protection & Inclusion,Change in self-reported stress/safety (0–10),BROM survey
